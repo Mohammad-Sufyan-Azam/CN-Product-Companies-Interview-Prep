@@ -30,3 +30,21 @@ vector<pair<int,int>> twoSum(vector<int>& arr, int target, int n)
 	return res;
 }
 
+int main()
+{
+	int n;
+	cin >> n;
+	vector<int> arr(n);
+	for (int i = 0; i < n; i++)
+	{
+		cin >> arr[i];
+	}
+	int target;
+	cin >> target;
+	vector<pair<int, int>> res = twoSum(arr, target, n);
+	for (int i = 0; i < res.size(); i++)
+	{
+		cout << res[i].first << " " << res[i].second << endl;
+	}
+	return 0;
+}
